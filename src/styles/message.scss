@@ -1,0 +1,77 @@
+@import "./global.scss";
+.wrapper_message {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 1rem 0;
+  .wrapper_message_content {
+    padding: 16px;
+    width: 377px;
+    border-radius: $borderRadius;
+    &.message-my {
+      background-color: $myMessageBg;
+    }
+    &.message-your {
+      background-color: $yourMessageBg;
+    }
+    .file {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      .downloader_wrapper {
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.25s linear transform;
+        &.message-your {
+          background-color: $yourMessageDownloaderBgAndSizeColor;
+        }
+        &.message-my {
+          background-color: $myMessageDownloaderBg;
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+
+      .file_content {
+        margin-left: 12px;
+        p {
+          margin: 0;
+          line-height: 18px;
+        }
+
+        .file_name {
+          font-family: $fontSemiBold;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .file_size {
+          font-family: $fontRegular;
+          font-size: 14px;
+          color: $yourMessageDownloaderBgAndSizeColor;
+        }
+      }
+    }
+    .caption {
+      font-family: $fontRegular;
+      line-height: 16px;
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  .date_format {
+    margin-left: auto;
+    font-family: $fontLightItalic;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 6px;
+    margin-right: 16px;
+  }
+}

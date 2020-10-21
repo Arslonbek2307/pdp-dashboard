@@ -1,0 +1,34 @@
+// all global colors
+
+//Message Component
+$myMessageBg: rgba(#ffb436, 0.08);
+$myMessageDownloaderBg: #ffb436;
+$yourMessageBg: #f8f8f8;
+$yourMessageDownloaderBgAndSizeColor: #898989;
+$borderRadius: 15px;
+$fontRegular: "SF-regular";
+$fontSemiBold: "SF-regular";
+$fontLight: "SF-light";
+$fontLightItalic: "SF-light-italic";
+
+//300 -> italic
+@font-face {
+  font-family: "SF-light-italic";
+  src: url(../assets/fonts/SF-Pro-Display-LightItalic.otf);
+}
+
+//300
+@font-face {
+  font-family: "SF-light";
+  src: url(../assets/fonts/SF-Pro-Display-Light.otf);
+}
+//400
+@font-face {
+  font-family: "SF-regular";
+  src: url(../assets/fonts/SF-Pro-Display-Regular.otf);
+}
+//600
+@font-face {
+  font-family: "SF-bold";
+  src: url(../assets/fonts/SF-Pro-Display-Semibold.otf);
+}
