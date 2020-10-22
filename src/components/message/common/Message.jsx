@@ -1,9 +1,14 @@
 import React from "react";
 import { dateFormater, colors } from "../../../utility";
-import { Icon } from "../../global-common/Icon";
+import { Icon } from "../../common/Icon";
 import "../../../styles/message.scss";
 
-const Message = ({ isFileExist, captionText, fileData, isMyMessage }) => {
+const Message = ({
+  isFileExist = true,
+  captionText = "Hammaga assalomu alekum 😁 yaxshimiszlar",
+  fileData = { name: "My file name.zip", size: 15 },
+  isMyMessage = true,
+}) => {
   const getFileElement = () => {
     return (
       <div className="file">
@@ -13,8 +18,8 @@ const Message = ({ isFileExist, captionText, fileData, isMyMessage }) => {
           <Icon name="downloader" color={colors.light} width={20} height={20} />
         </div>
         <div className="file_content">
-          <p className="file_name">{fileData.fileName}</p>
-          <p className="file_size">{`${fileData.fileSize} MB`}</p>
+          <p className="file_name">{fileData.name}</p>
+          <p className="file_size">{`${fileData.size} MB`}</p>
         </div>
       </div>
     );

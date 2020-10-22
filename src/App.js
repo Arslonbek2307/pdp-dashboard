@@ -1,11 +1,18 @@
 import React from "react";
-import { Degrees } from "./components/degrees/Degrees";
+import { Range } from "./components/Range";
 
 function App() {
   return (
-    <>
-      <Degrees />
-    </>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
+      <Range />
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { colors } from "../../../utility";
-import { Icon } from "../../global-common/Icon";
+import { Icon } from "../../common/Icon";
 
 export const DegreesController = ({ onSelect, degreess, currentId }) => {
   const { dark, disabled } = colors;

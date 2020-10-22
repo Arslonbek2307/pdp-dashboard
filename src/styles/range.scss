@@ -1,0 +1,77 @@
+@import "./global.scss";
+
+.range_wrapper {
+  padding: 1rem;
+
+  border: 1px solid $lightGray;
+  border-radius: 6px;
+  .header_rate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    .title {
+      font-family: $fontMedium;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .percent {
+      font-family: $fontSemiBold;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+  .range_content {
+    display: flex;
+    align-items: center;
+    .icon_wrapper {
+      border: 3px solid $light;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 15px rgba(255, 180, 54, 0.21);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .range_input_wrapper {
+      display: flex;
+      border-radius: 7px;
+      background-color: $darkGray;
+      position: relative;
+      z-index: 1;
+      margin-left: 8px;
+      input[type="range"] {
+        appearance: none;
+        width: 130px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 9px;
+        padding: 0;
+        border: 0;
+        margin: 0;
+        background: transparent;
+      }
+      /* Special styling for WebKit/Blink */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 12px;
+        width: 12px;
+        border: 3px solid #ffffff;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 15px rgba(10, 231, 72, 0.59);
+        border-radius: 6px;
+      }
+      .input-bad::-webkit-slider-thumb {
+        background: $red;
+      }
+      .input-normal::-webkit-slider-thumb {
+        background: $darkYellow;
+      }
+      .input-good::-webkit-slider-thumb {
+        background: $green;
+      }
+      .input-excellent::-webkit-slider-thumb {
+        background: $green;
+      }
+    }
+  }
+}
