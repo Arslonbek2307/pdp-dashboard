@@ -1,15 +1,13 @@
-// all global colors
-
-//Message Component
-$myMessageBg: rgba(#ffb436, 0.08);
-$myMessageDownloaderBg: #ffb436;
-$yourMessageBg: #f8f8f8;
-$yourMessageDownloaderBgAndSizeColor: #898989;
+$lightYellow: rgba(hsl(38, 100%, 61%), 0.08);
+$darkYellow: #ffb436;
+$lightGray: #f8f8f8;
+$darkGray: #898989;
 $borderRadius: 15px;
 $fontRegular: "SF-regular";
 $fontSemiBold: "SF-regular";
 $fontLight: "SF-light";
 $fontLightItalic: "SF-light-italic";
+$fontMedium: "SF-medium";
 
 //300 -> italic
 @font-face {
@@ -26,6 +24,11 @@ $fontLightItalic: "SF-light-italic";
 @font-face {
   font-family: "SF-regular";
   src: url(../assets/fonts/SF-Pro-Display-Regular.otf);
+}
+//500
+@font-face {
+  font-family: "SF-medium";
+  src: url(../assets/fonts/SF-Pro-Display-Medium.otf);
 }
 //600
 @font-face {

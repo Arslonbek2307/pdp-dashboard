@@ -1,7 +1,7 @@
 import React from "react";
-import { dateFormater } from "../utility/dateFormater";
-import { Icon } from "./common/Icon";
-import "../styles/message.scss";
+import { dateFormater, colors } from "../../../utility";
+import { Icon } from "../../global-common/Icon";
+import "../../../styles/message.scss";
 
 const Message = ({ isFileExist, captionText, fileData, isMyMessage }) => {
   const getFileElement = () => {
@@ -10,7 +10,7 @@ const Message = ({ isFileExist, captionText, fileData, isMyMessage }) => {
         <div
           className={`downloader_wrapper message-${getClassNameOfMessage()}`}
         >
-          <Icon name="downloader" color="#fff" width={20} height={20} />
+          <Icon name="downloader" color={colors.light} width={20} height={20} />
         </div>
         <div className="file_content">
           <p className="file_name">{fileData.fileName}</p>

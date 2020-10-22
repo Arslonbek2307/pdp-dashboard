@@ -1,0 +1,83 @@
+@import "./global.scss";
+.degrees_wrapper {
+  display: flex;
+  .degrees_box_wrapper {
+    padding: 12px 30px;
+    display: flex;
+    width: 80px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $lightGray;
+    cursor: pointer;
+    transition: 0.25s linear transform;
+    opacity: 0.5;
+    &.no_opacity {
+      opacity: 1;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+
+    .order_number {
+      font-family: $fontSemiBold;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+    .star {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .star_number {
+        font-family: $fontMedium;
+        font-weight: 500;
+        font-size: 16px;
+        padding-top: 4px;
+        margin-left: 4px;
+      }
+    }
+    .degrees_name {
+      font-family: $fontSemiBold;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 9px;
+    }
+  }
+
+  .degrees_controller_wrapper {
+    display: flex;
+    width: 100px;
+    box-sizing: border-box;
+    border: 1px solid $lightGray;
+
+    .border {
+      width: 1px;
+      height: 61px;
+      background: $darkGray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+    .next,
+    .prev {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      cursor: no-drop;
+      &:hover {
+        background-color: #f8f8f8;
+      }
+    }
+    .active {
+      cursor: pointer !important;
+      transition: 0.25s linear transform;
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
